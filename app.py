@@ -85,6 +85,6 @@ async def predict(file: UploadFile=File(...)):
     prediction = predict_caption(Model, input_image_feature, tokenizer, max_length)
     return {"caption": prediction}
 
-if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host='localhost', port=8000)
 
